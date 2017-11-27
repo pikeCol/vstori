@@ -1,0 +1,27 @@
+{
+  "name": "money",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pikeCol/money.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pikeCol/money/issues"
+  },
+  "homepage": "https://github.com/pikeCol/money#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2",
+    "jquery": "^3.2.1",
+    "layer": "^0.1.0"
+  }
+}
