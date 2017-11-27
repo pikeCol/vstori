@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" href="./dist/css/index.css">
+	<link rel="stylesheet" href="./layer/css/layui.css">
+	<script src="./dist/js/jquery.min.js"></script>
+	<script src="./layer/layui.js"></script>
+</head>
+<body>
+	<div class="pages">
+		<div class="header-wrap">
+			<div class="banner">
+				<img src="./img/beijing.png" alt="">
+				<div class="form-wrap">
+					<form class="layui-form cont" action="">
+					  <div class="layui-form-item">
+					    <label class="layui-form-label">用户名</label>
+					    <div class="layui-input-block">
+					      <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+					    </div>
+					  </div>
+					  <div class="layui-form-item">
+					    <label class="layui-form-label">手机号</label>
+					    <div class="layui-input-block">
+					      <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
+					    </div>
+					    
+					  </div>
+					  <div class="layui-form-item">
+					    <label class="layui-form-label">验证码</label>
+					    <div class="layui-input-inline">
+					      <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
+					    </div>
+					    <div class="layui-form-mid layui-word-aux">获取验证码</div>
+					  </div>
+					  <div class="layui-form-item">
+					    <label class="layui-form-label">设置密码</label>
+					    <div class="layui-input-block">
+					      <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+					    </div>
+					  </div>
+					  <div class="layui-form-item">
+					    <label class="layui-form-label">确认密码</label>
+					    <div class="layui-input-block">
+					      <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+					    </div>
+					  </div>
+					  <div class="layui-form-item">
+					    <div class="layui-input-block">
+					      <button class="layui-btn layui-btn-normal" lay-submit lay-filter="formDemo">注册</button>
+					    </div>
+					  </div>
+					</form>
+				</div>
+			</div>
+	  </div>
+	</div>
+</div>
+<script>
+	layui.use('form', function(){
+	  var form = layui.form; //只有执行了这一步，部分表单元素才会自动修饰成功
+	  
+	  //……
+	  
+	  //但是，如果你的HTML是动态生成的，自动渲染就会失效
+	  //因此你需要在相应的地方，执行下述方法来手动渲染，跟这类似的还有 element.init();
+	  form.render();
+	});
+</script>
+</body>
+</html>
