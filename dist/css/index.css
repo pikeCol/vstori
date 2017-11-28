@@ -2,6 +2,14 @@
   padding: 0;
   margin: 0;
 }
+.font16 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.font14 {
+  font-size: 14px;
+  margin: 10px 0;
+}
 .right {
   float: right;
 }
@@ -12,6 +20,9 @@
   clear: both;
   overflow: hidden;
   zoom: 1;
+}
+.wd100 {
+  width: 100%;
 }
 .underline {
   border-bottom: 1px solid white;
@@ -296,6 +307,7 @@ a:hover {
   line-height: 40px;
   text-align: center;
   border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 .moredetail span.active {
   background: #4286F5;
@@ -323,9 +335,26 @@ a:hover {
   left: 50%;
   margin-left: -430px;
   background: white;
-  height: 400px;
 }
 .cont {
   width: 600px;
   margin: 0 auto;
+  padding-top: 66px;
+  padding-bottom: 60px;
+}
+.tologin {
+  text-align: center;
+}
+.tologin a {
+  font-size: 14px;
+  color: #4285F4;
+  line-height: 12px;
+}
+.icons {
+  position: absolute;
+  font-size: 30px;
+  color: #ccc;
+  right: 6px;
+  top: 6px;
+  cursor: pointer;
 }

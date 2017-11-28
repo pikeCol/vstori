@@ -26,4 +26,5 @@ gulp.task('default',['testLess'], function(){
   });
   gulp.watch("css/*.less", ['testLess']);
   gulp.watch("*.html").on('change',browserSync.reload);
+  gulp.watch("backend/*.html").on('change',browserSync.reload);
 })

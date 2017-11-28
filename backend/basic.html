@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户后台</title>
+	<link rel="stylesheet" href="../dist/css/index.css">
+	<link rel="stylesheet" href="../dist/css/backend.css">
+	<script src="../dist/js/jquery.min.js"></script>
+	<link rel="stylesheet" href="../layer/css/layui.css">
+</head>
+<body>
+	<div class="pages">
+		<div class="header-wrap">
+			<div class="header-left" style="background: #4286F5;position: static;background: rgba(67, 134, 246, 1)">
+				<div class="logo">
+					<img src="../img/logo.png" alt="">
+				</div>
+				<ul class="navbars">
+					<li><a href="../index.html">首页</a></li>
+					<li><a href="">插件市场</a></li>
+					<li><a href="">产品中心</a></li>
+				</ul>
+				<div class="sign-in">
+					<span><a href="">登陆</a></span>
+					<span><a href="">注册</a></span>
+				</div>
+				<div class="login-out">
+					<span class="avatar"><img src="../img/morentouxiang.png" alt=""></span>
+					<span>13611111111</span>
+					<span>退出</span>
+				</div>
+			</div>
+	  </div>
+	 <div class="contents">
+  	<div class="sidebar">
+	    <ul class="sidebar-menu">
+	    	<li class="select"><a href="">基本信息</a></li>
+	    	<li><a href="">我的订单</a></li>
+	    	<li><a href="">密码管理</a></li>
+	    	<li><a href="">手机号管理</a></li>
+	    	<li><a href="">实名认证</a></li>
+	    	<li><a href="">申请成为开发者</a></li>
+	    </ul>
+	  </div>
+	</div>
+</div>
+<script>
+	$('.navbars li a').hover(function(){
+		$(this).addClass('underline')
+	}, function(){
+		$(this).removeClass('underline')
+	})
+
+</script>
+</body>
+</html>
