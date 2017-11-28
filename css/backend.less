@@ -7,6 +7,8 @@
 	bottom: 0;
 	height: 100%;
   overflow-x: hidden;
+  border-right: 1px #F9FAFC solid;
+  box-sizing: border-box;
 }
 
 .sidebar-menu {
@@ -34,3 +36,34 @@
 		color: #4286F5!important;
 	}
 }
+
+.right-content {
+	position: absolute;
+	left: 240px;
+	top: 80px;
+	right: 0;
+	bottom: 0;
+	background: white;
+	padding: 58px 0 0 120px;
+	.basic{
+		width: 500px;
+	}
+}
+.avatar {
+	width: 94px;
+	height: 94px;
+	position: relative;
+	.masks{
+		position: absolute;
+		top:0;
+		left: 0;
+		text-align: center;
+		line-height: 94px;
+		cursor: pointer;
+		width: 100%;
+		height: 100%;
+		color: #fff;
+		background: rgba(37,38,46,0.50);
+	}
+}
+

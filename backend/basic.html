@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="../dist/css/backend.css">
 	<script src="../dist/js/jquery.min.js"></script>
 	<link rel="stylesheet" href="../layer/css/layui.css">
+	<script src="../layer/layui.js"></script>
 </head>
 <body>
 	<div class="pages">
@@ -42,6 +43,72 @@
 	    	<li><a href="">申请成为开发者</a></li>
 	    </ul>
 	  </div>
+	  <div class="right-content">
+	  	<form class="layui-form basic" action="">
+		
+				<div class="layui-form-item">
+			    <div class="layui-input-block">
+			    	<div class="avatar">
+			    		<img width="94" height="94" src="../img/back/morentouxiang.png" alt="">
+			    		<div class="masks">修改头像</div>
+			    	</div>
+			    </div>
+			  </div>
+
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">用户名:</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="username" required  lay-verify="required" placeholder="2-15字，仅支持汉子、字母、数字" value="sdfklasj" disabled autocomplete="off" class="layui-input">
+			    </div>
+			    <!-- <div class="layui-form-mid layui-word-aux">请填写6到12位密码</div> -->
+			  </div>
+
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">手机号:</label>
+			    <!-- <div class="layui-input-block">
+			      <input type="password" name="password" required lay-verify="required|phone" placeholder="请确认登录密码" autocomplete="off" class="layui-input">
+			    </div> -->
+			    <div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+			  </div>
+
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">邮箱:</label>
+			    <!-- <div class="layui-input-block">
+			      <input type="password" name="password" required lay-verify="required|phone" placeholder="请确认登录密码" autocomplete="off" class="layui-input">
+			    </div> -->
+			    <div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+			  </div>
+
+			 	<div class="layui-form-item">
+			    <label class="layui-form-label">QQ:</label>
+			    <!-- <div class="layui-input-block">
+			      <input type="password" name="password" required lay-verify="required|phone" placeholder="请确认登录密码" autocomplete="off" class="layui-input">
+			    </div> -->
+			    <div class="layui-form-mid layui-word-aux">19736209635</div>
+			  </div>
+
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">公司:</label>
+			    <!-- <div class="layui-input-block">
+			      <input type="password" name="password" required lay-verify="required|phone" placeholder="请确认登录密码" autocomplete="off" class="layui-input">
+			    </div> -->
+			    <div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+			  </div>
+			
+				<div class="layui-form-item">
+			    <div class="layui-input-block">
+			      <button class="layui-btn layui-btn-normal" >修改</button>
+			    </div>
+			  </div>
+
+			 <!--  <div class="layui-form-item">
+			    <div class="layui-input-block">
+			      <button class="layui-btn layui-btn-normal" lay-submit lay-filter="formDemo">保存</button>
+			      <button class="layui-btn " >取消</button>
+			    </div>
+			  </div> -->
+			</form>
+	  </div>
 	</div>
 </div>
 <script>
@@ -50,6 +117,15 @@
 	}, function(){
 		$(this).removeClass('underline')
 	})
+	layui.use('form', function(){
+	  var form = layui.form;
+	  
+	  //监听提交
+	  form.on('submit(formDemo)', function(data){
+	    layer.msg(JSON.stringify(data.field));
+	    return false;
+	  });
+	});
 
 </script>
 </body>
