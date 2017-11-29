@@ -10,7 +10,21 @@
   border-right: 1px #F9FAFC solid;
   box-sizing: border-box;
 }
-
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+.layui-btn.btn-default {
+	background-color: #F2F2F2;
+	border: 1px solid #CCCCCC;
+	border-radius: 2px;
+	color: #222;
+}
+.layui-btn.btn-default:hover{
+	color: #222;
+}
 .sidebar-menu {
 	padding-top: 18px;
 	li {
@@ -18,6 +32,7 @@
 		cursor: pointer;
 		line-height: 40px;
 		padding-left: 40px;
+		border-left: 4px solid #fff;
 		box-sizing: border-box;
 		a {
 			font-size: 14px;
@@ -31,7 +46,7 @@
 }
 
 .select {
-	border-left: 4px solid #4286F5;
+	border-left: 4px solid #4286F5!important;
 	a {
 		color: #4286F5!important;
 	}
@@ -47,6 +62,21 @@
 	padding: 58px 0 0 120px;
 	.basic{
 		width: 500px;
+	}
+}
+.right-content-noPadding {
+	position: absolute;
+	left: 240px;
+	top: 80px;
+	right: 0;
+	bottom: 0;
+	background: white;
+	.basic{
+		width: 500px;
+	}
+	.form-hori {
+		background: #F1F1F1;
+		font-size: 14px
 	}
 }
 .avatar {
@@ -67,3 +97,52 @@
 	}
 }
 
+.layer-uploads {
+	width: 486px;
+	height: 116px;
+	border: 1px solid #CCCCCC;
+	border-radius: 2px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+	cursor: pointer;
+	p{
+		color: #666;
+		padding: 4px;
+	}
+}
+.no-content {
+	text-align: center;
+}
+.form-item {
+	display: inline-block;
+	height: 38px;
+	background: #F1F1F1;
+	padding-left: 24px;
+	padding-top: 8px;
+	box-sizing: border-box;
+	label {
+		font-size: 14px;
+		color: #222222;
+		padding-right: 4px;
+	}
+	input {
+		border: 1px solid #CCCCCC;
+		border-radius: 2px;
+		padding-left: 10px;
+		height: 24px;
+		width: 130px;
+	}
+}
+.input-wrap {
+	display: inline-block;
+}
+.search {
+	background: #4286F5;
+	border-radius: 2px;
+	color: white;
+	border: none;
+	width: 70px;
+	height: 24px;
+	cursor: pointer;
+}
